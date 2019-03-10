@@ -5,6 +5,11 @@ function [PSNR] = psnr_calculator(raw, new)
 % 邮箱：dhrd
 
 %% 先计算MSE，再计算PSNR
+
+% convert the input into double format
+raw = double(raw);
+new = double(new);
+
 [row, line]=size(raw);
 MSE=sum(sum((raw-new).^2))/(row*line);
 PSNR=20*log10(255/sqrt(MSE));
