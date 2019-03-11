@@ -4,9 +4,10 @@
 
 具体的文件说明如下：
 
-t1文件夹中包含4个.m文件：
+t1文件夹中包含5个.m文件：
 t1.m是我用自己实现的采样，插值和PSNR计算函数写的代码；
 t1_usingBuiltInFunc.m是我调用Matlab自带的函数的代码；
+compare_Interp.m是我公平对比两种插值函数的性能的代码；
 bilin.m是我自己实现的双线性插值函数；
 psnr_calculator.m是我自己实现的PSNR计算函数。
 
